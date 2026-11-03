@@ -1,6 +1,6 @@
 Algoritmo Conversión_base a decimal()
 //Declaraciones
-  Definir numero, cociente, residuo, potencia, binario como reales
+  Definir numero, cociente, residuo, potencia, binario como enteros
 
 //Cuerpo
   Escribir "Ingrese un número decimal entero positivo:"
