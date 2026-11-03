@@ -1,4 +1,4 @@
-Algoritmo Numero_perfecto
+Algoritmo Numero_perfecto()
   //Declaraciones
     Definir n, i, suma como entero
 
