@@ -1,0 +1,51 @@
+Algoritmo Estadisticas_notas()
+//Declaraciones
+    Definir n, i, aprobados, reprobados como entero
+    Definir nota, suma, promedio, mayor, menor como real
+
+//Cuerpo
+    Escribir "Ingrese la cantidad de calificaciones (N):"
+    Leer n
+
+    Si n <= 0 entonces
+        Escribir "Error: N debe ser mayor que 0"
+    SiNo
+        suma <- 0
+        aprobados <- 0
+        reprobados <- 0
+
+        Para i <- 1 Hasta n con Paso 1 hacer
+            Escribir "Ingrese la nota ", i, ":"
+            Leer nota
+
+            suma <- suma + nota
+
+            Si i = 1 entonces
+                mayor <- nota
+                menor <- nota
+            SiNo
+                Si nota > mayor entonces
+                    mayor <- nota
+                FinSi
+                Si nota < menor entonces
+                    menor <- nota
+                FinSi
+            FinSi
+
+            Si nota >= 7 entonces
+                aprobados <- aprobados + 1
+            SiNo
+                reprobados <- reprobados + 1
+            FinSi
+        FinPara
+
+        promedio <- suma / n
+
+        Escribir "RESUMEN"
+        Escribir "Promedio: ", promedio
+        Escribir "Nota mayor: ", mayor
+        Escribir "Nota menor: ", menor
+        Escribir "Aprobados: ", aprobados
+        Escribir "Reprobados: ", reprobados
+    FinSi
+FinAlgoritmo
