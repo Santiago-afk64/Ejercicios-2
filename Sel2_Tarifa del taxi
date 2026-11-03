@@ -1,0 +1,22 @@
+Algoritmo Tarifa del taxi()
+//Declaraciones
+  Definir km, Tarifa_base, Total como real
+  Definir Noche como caracter
+
+//Cuerpo
+  Escribir "Ingrese cantidad de kilometros:"
+  Leer Km
+  Escribir "Es de noche: (S/N)" 
+  Leer Noche
+
+  Tarifa_base <- val_base + 1.50 (km)
+  Total <- Tarifa base
+
+  Si Km > 10 entonces
+    Tarifa_base <- Total + Tarifa_base * 0.20
+  FinSi
+  Si Noche = "S" entonces
+    Tarifa_base <- val_base + val_base * 0.30
+  FinSi
+  Escribir "El total a pagar es: $", Tarifa_base
+FinAlgoritmo
