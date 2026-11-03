@@ -17,4 +17,3 @@ Algoritmo Amortización()
   Escribir "El interes total es:", Interes_total
   Escribir "La cuota a pagar es:", Cuota
 FinAlgoritmo
-  
