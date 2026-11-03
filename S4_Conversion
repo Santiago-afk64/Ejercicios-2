@@ -1,3 +1,24 @@
-Algoritmo Conversión_base a decimal
+Algoritmo Conversión_base a decimal()
 //Declaraciones
-  Definir numero decimal como reales
+  Definir numero, cociente, residuo, potencia, binario como reales
+
+//Cuerpo
+  Escribir "Ingrese un número decimal entero positivo:"
+  Leer numero
+
+  cociente ← numero
+  binario  ← 0
+  potencia ← 1
+
+  Si numero = 0 entonces
+    binario <- 0
+  SiNo
+    Mientras cociente > 0 hacer
+      residuo  <- cociente MOD 2             
+      binario  <- binario + (residuo * potencia)
+      cociente <- cociente DIV 2           
+      potencia <- potencia * 10            
+    FinMientras
+  FinSi
+  Escirbir "El numero", numero, "en binario es:", binario
+FinAlgoritmo
