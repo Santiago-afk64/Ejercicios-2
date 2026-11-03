@@ -1,0 +1,24 @@
+Algoritmo Ahorro_mensual()
+  //Declaraciones
+    Definir capital, deposito, tasa, saldo, interes Como Real
+    Definir n, mes Como Entero
+
+  //Cuerpo
+    Escribir "Ingrese el capital inicial:"
+    Leer capital
+    Escribir "Ingrese el depósito mensual:"
+    Leer deposito
+    Escribir "Ingrese el número de meses (N):"
+    Leer n
+    Escribir "Ingrese la tasa mensual en % (ej. 1.5):"
+    Leer tasa
+
+    saldo <- capital
+
+    Para mes <- 1 Hasta n con paso 1 hacer
+        saldo <- saldo + deposito
+        interes <- saldo * tasa / 100
+        saldo <- saldo + interes
+        Escribir "Mes ", mes, ": saldo = $", saldo
+    FinPara
+FinAlgoritmo
