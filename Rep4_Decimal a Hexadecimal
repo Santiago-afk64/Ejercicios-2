@@ -49,7 +49,6 @@ Algoritmo Decimal_a_Hexadecimal()
                 cociente <- cociente DIV 16
             FinMientras
         FinSi
-
         Escribir numero, " en hexadecimal es: ", hexa
     FinSi
 FinAlgoritmo
