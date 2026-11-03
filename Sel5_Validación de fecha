@@ -1,9 +1,9 @@
 Algoritmo Validacion_fecha()
-    //Declaraciones
+//Declaraciones
     Definir dia, mes, año, dias_mes Como Entero
     Definir bisiesto, valida como Logico
 
-    //Cuerpo
+//Cuerpo
     Escribir "Ingrese el día:"
     Leer dia
     Escribir "Ingrese el mes:"
