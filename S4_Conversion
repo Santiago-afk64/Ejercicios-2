@@ -6,9 +6,9 @@ Algoritmo Conversión_base a decimal()
   Escribir "Ingrese un número decimal entero positivo:"
   Leer numero
 
-  cociente ← numero
-  binario  ← 0
-  potencia ← 1
+  cociente <- numero
+  binario  <- 0
+  potencia <- 1
 
   Si numero = 0 entonces
     binario <- 0
