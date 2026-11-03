@@ -1,5 +1,4 @@
-ALGORITMO CostoViajes ()
-
+Algoritmo CostoViajes ()
 //Declaraciones
     Definir distancia, consumo, precioCombustible como real
     Definir numPeajes como entero
