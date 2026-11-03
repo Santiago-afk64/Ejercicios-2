@@ -1,1 +1,29 @@
 Algoritmo Clasificiación_triangulos()
+//Declaraciones
+  Definir angulo_1, angulo_2, angulo_3 como reales
+
+//Cuerpo
+  Escribir "Ingrese el angulo 1 del triangulo:"
+  Leer angulo_1
+  Escribir "Ingrese el angulo 2 del triangulo:"
+  Leer angulo_2
+  Escribir "Ingrese el angulo 3 del triangulo:"
+  Leer angulo_3
+
+  Suma <- angulo_1 + angulo_2 + angulo_3
+
+  Si suma = 180 entonces y angulo_1 > 0 y angulo_2 > 0 y angulo_3 > 0 entonces
+      Si angulo_1 = 90 o angulo_2 = 90 o angulo_3 = 90 entonces
+        Escribir "Triangulo rectangulo"
+      SiNo 
+        Si angulo_1 > 90 o angulo_2 > 90 o angulo_3 > 90 entonces
+          Escribir "Triangulo obtusángulo
+        SiNo 
+          Escribir "Triangulo acutángulo"
+        FinSi
+      FinSi
+    FinSi
+  SiNo
+    Escribir "Error: los angulos no forman un triangulo valido"
+  FinSi
+FinAlgoritmo
