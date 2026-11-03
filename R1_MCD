@@ -1,8 +1,8 @@
 Algoritmo MCD()
-    //Declaraciones
-    Definir a, b, temp, num1, num2 Como entero
+//Declaraciones
+    Definir a, b, temp, num1, num2 como entero
 
-    //Cuerpo
+//Cuerpo
     Escribir "Ingrese el primer número (positivo):"
     Leer num1
     Escribir "Ingrese el segundo número (positivo):"
