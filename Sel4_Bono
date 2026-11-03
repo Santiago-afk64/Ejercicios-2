@@ -1,0 +1,30 @@
+Algoritmo Bono_productividad()
+    //Declaraciones
+    Definir sueldo_base, productividad, porcentaje, bono, total Como Real
+
+    //Cuerpo
+    Escribir "Ingrese el sueldo base:"
+    Leer sueldo_base
+    Escribir "Ingrese el porcentaje de productividad:"
+    Leer productividad
+
+    Si productividad >= 90 entonces
+        porcentaje <- 0.20
+    SiNo
+        Si productividad >= 70 entonces
+            porcentaje <- 0.10
+        SiNo
+            Si productividad >= 50 entonces
+                porcentaje <- 0.05
+            SiNo
+                porcentaje <- 0
+            FinSi
+        FinSi
+    FinSi
+
+    bono  <- sueldo_base * porcentaje
+    total <- sueldo_base + bono
+
+    Escribir "Bono: $", bono
+    Escribir "Total a pagar: $", total
+FinAlgoritmo
