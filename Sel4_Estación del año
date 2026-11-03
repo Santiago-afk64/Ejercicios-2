@@ -1,0 +1,28 @@
+Algoritmo Estacion_año()
+    //Declaraciones
+    Definir mes, dia Como Entero
+
+    //Cuerpo
+    Escribir "Ingrese el mes (1-12):"
+    Leer mes
+    Escribir "Ingrese el día:"
+    Leer dia
+
+    Si mes < 1 o mes > 12 o dia < 1 o dia > 31 entonces
+        Escribir "Error: fecha fuera de rango"
+    SiNo
+        Si (mes = 12 y dia >= 21) o mes = 1 o mes = 2 o (mes = 3 y dia <= 20) entonces
+            Escribir "Verano"
+        SiNo
+            Si (mes = 3 y dia >= 21) o mes = 4 o mes = 5 o (mes = 6 y dia <= 20) entonces
+                Escribir "Otoño"
+            SiNo
+                Si (mes = 6 y dia >= 21) o mes = 7 o mes = 8 o (mes = 9 y dia <= 20) entonces
+                    Escribir "Invierno"
+                SiNo
+                    Escribir "Primavera"
+                FinSi
+            FinSi
+        FinSi
+    FinSi
+FinAlgoritmo
