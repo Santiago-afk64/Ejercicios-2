@@ -1,8 +1,8 @@
 Algoritmo Bono_productividad()
-    //Declaraciones
+//Declaraciones
     Definir sueldo_base, productividad, porcentaje, bono, total Como Real
 
-    //Cuerpo
+//Cuerpo
     Escribir "Ingrese el sueldo base:"
     Leer sueldo_base
     Escribir "Ingrese el porcentaje de productividad:"
