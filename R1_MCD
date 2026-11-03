@@ -1,0 +1,25 @@
+Algoritmo MCD()
+    //Declaraciones
+    Definir a, b, temp, num1, num2 Como entero
+
+    //Cuerpo
+    Escribir "Ingrese el primer número (positivo):"
+    Leer num1
+    Escribir "Ingrese el segundo número (positivo):"
+    Leer num2
+
+    Si num1 <= 0 o num2 <= 0 entonces
+        Escribir "Error: los números deben ser positivos"
+    SiNo
+        a <- num1
+        b <- num2
+
+        Mientras b <> 0 hacer
+            temp <- b
+            b <- a MOD b
+            a <- temp
+        FinMientras
+
+        Escribir "El MCD de ", num1, " y ", num2, " es: ", a
+    FinSi
+FinAlgoritmo
