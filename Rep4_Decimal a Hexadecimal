@@ -1,0 +1,55 @@
+Algoritmo Decimal_a_Hexadecimal()
+//Declaraciones
+    Definir numero, cociente, residuo como entero
+    Definir hexa, digito como cadena
+
+//Cuerpo
+    Escribir "Ingrese un número decimal entero positivo:"
+    Leer numero
+
+    Si numero < 0 entonces
+        Escribir "Error: el número debe ser positivo"
+    SiNo
+        Si numero = 0 entonces
+            hexa <- "0"
+        SiNo
+            hexa <- ""
+            cociente <- numero
+
+            Mientras cociente > 0 hacer
+                residuo <- cociente MOD 16
+
+                Si residuo < 10 entonces
+                    digito <- ConvertirATexto(residuo)
+                SiNo
+                    Si residuo = 10 entonces
+                        digito <- "A"
+                    SiNo
+                        Si residuo = 11 entonces
+                            digito <- "B"
+                        SiNo
+                            Si residuo = 12 entonces
+                                digito <- "C"
+                            SiNo
+                                Si residuo = 13 entonces
+                                    digito <- "D"
+                                SiNo
+                                    Si residuo = 14 entonces
+                                        digito <- "E"
+                                    SiNo
+                                        digito <- "F"
+                                    FinSi
+                                FinSi
+                            FinSi
+                        FinSi
+                    FinSi
+                FinSi
+
+                hexa <- digito + hexa
+                cociente <- cociente DIV 16
+            FinMientras
+        FinSi
+
+        Escribir numero, " en hexadecimal es: ", hexa
+    FinSi
+FinAlgoritmo
