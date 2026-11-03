@@ -1,4 +1,4 @@
-Algoritmo Decimal_a_Hexadecimal()
+Algoritmo Decimal_Hexadecimal()
 //Declaraciones
     Definir numero, cociente, residuo como entero
     Definir hexa, digito como cadena
