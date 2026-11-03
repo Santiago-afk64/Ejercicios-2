@@ -1,8 +1,8 @@
 Algoritmo Estacion_año()
-    //Declaraciones
+//Declaraciones
     Definir mes, dia Como Entero
 
-    //Cuerpo
+//Cuerpo
     Escribir "Ingrese el mes (1-12):"
     Leer mes
     Escribir "Ingrese el día:"
