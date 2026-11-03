@@ -1,11 +1,11 @@
 ALGORITMO CostoViajes ()
 
-VARIABLES
-    distancia, consumo, precioCombustible: REAL
-    numPeajes: ENTERO
-    costoPeaje, litros, costoCombustible, costoPeajes, costoTotal: REAL
+//Declaraciones
+    Definir distancia, consumo, precioCombustible como real
+    Definir numPeajes como entero
+    Definir costoPeaje, litros, costoCombustible, costoPeajes, costoTotal como real
 
-INICIO
+//Cuerpo
     ESCRIBIR "Ingrese la distancia del viaje (km): "
     LEER distancia
     ESCRIBIR "Ingrese el consumo del auto (km/l): "
