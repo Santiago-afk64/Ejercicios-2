@@ -9,7 +9,7 @@ Algoritmo Tarifa del taxi()
   Escribir "Es de noche: (S/N)" 
   Leer Noche
 
-  Tarifa_base <- val_base + 1.50 (km)
+  Tarifa_base <- val_base + 1.50 * km
   Total <- Tarifa base
 
   Si Km > 10 entonces
